@@ -3,7 +3,7 @@ import { HealthReportModal } from './components/HealthReportModal';
 import { ResipayModal } from './components/ResipayModal';
 import { TTBModal } from './components/TTBModal';
 import { MuzeModal } from './components/MuzeModal';
-import { KplusModal } from './components/KplusModal';
+import KplusModal from './components/KplusModal';
 
 import ttbLogo from '../imports/Logo/ttb-spark.png';
 import muzeLogo from '../imports/Logo/muze-logo.png';
