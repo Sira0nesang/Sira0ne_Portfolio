@@ -3,7 +3,7 @@ import { HealthReportModal } from './components/HealthReportModal';
 import { ResipayModal } from './components/ResipayModal';
 import { TTBModal } from './components/TTBModal';
 import { MuzeModal } from './components/MuzeModal';
-import { KPlusModal } from './components/KPlusModal';
+import { KplusModal } from './components/KplusModal';
 
 import ttbLogo from '../imports/Logo/ttb-spark.png';
 import muzeLogo from '../imports/Logo/muze-logo.png';
@@ -86,7 +86,7 @@ export default function App() {
   const [hoveredProject, setHoveredProject] = useState<string | null>(null);
   const [isHealthModalOpen, setIsHealthModalOpen] = useState(false);
   const [isResipayModalOpen, setIsResipayModalOpen] = useState(false);
-  const [isKPlusModalOpen, setIsKPlusModalOpen] = useState(false);
+  const [isKplusModalOpen, setIsKplusModalOpen] = useState(false);
   const [isTTBModalOpen, setIsTTBModalOpen] = useState(false);
   const [isMuzeModalOpen, setIsMuzeModalOpen] = useState(false);
 
@@ -95,7 +95,7 @@ export default function App() {
 
       {/* Modals */}
       <HealthReportModal isOpen={isHealthModalOpen} onClose={() => setIsHealthModalOpen(false)} />
-      <KPlusModal isOpen={isKPlusModalOpen} onClose={() => setIsKPlusModalOpen(false)} />
+      <KplusModal isOpen={isKplusModalOpen} onClose={() => setIsKplusModalOpen(false)} />
       <ResipayModal isOpen={isResipayModalOpen} onClose={() => setIsResipayModalOpen(false)} />
       <TTBModal isOpen={isTTBModalOpen} onClose={() => setIsTTBModalOpen(false)} />
       <MuzeModal isOpen={isMuzeModalOpen} onClose={() => setIsMuzeModalOpen(false)} />
@@ -184,7 +184,7 @@ export default function App() {
                 </button>
                 <a href="mailto:sirawan@email.com"
                   className="px-6 py-3 border-2 border-white text-white rounded-full text-sm font-medium hover:bg-white hover:text-gray-800 transition-all">
-                  contact
+                  email
                 </a>
               </div>
             </div>
@@ -204,7 +204,7 @@ export default function App() {
                     onMouseLeave={() => setHoveredProject(null)}
                     onClick={() => {
                       if (project.name === 'Health Report Redesign') setIsHealthModalOpen(true);
-                      if (project.name === 'Redesign K PLUS') setIsKPlusModalOpen(true);
+                      if (project.name === 'Redesign K PLUS') setIsKplusModalOpen(true);
                       if (project.name === 'Resipay') setIsResipayModalOpen(true);
                     }}
                     className="cursor-pointer py-2 transition-all duration-200"
@@ -255,7 +255,7 @@ export default function App() {
                       key={idx}
                       onClick={() => {
                         if (project.name === 'Health Report Redesign') setIsHealthModalOpen(true);
-                        if (project.name === 'Redesign K PLUS') setIsKPlusModalOpen(true);
+                        if (project.name === 'Redesign K PLUS') setIsKplusModalOpen(true);
                         if (project.name === 'Resipay') setIsResipayModalOpen(true);
                       }}
                       className="cursor-pointer group relative rounded-2xl overflow-hidden transition-all duration-200 hover:scale-[1.02]"
