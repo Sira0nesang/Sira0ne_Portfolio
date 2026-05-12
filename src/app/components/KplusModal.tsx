@@ -50,7 +50,7 @@ const imgStyle = {
   border: '1px solid #f0f0f0',
 };
 
-export function KPlusModal({ isOpen, onClose }: Props) {
+export function KplusModal({ isOpen, onClose }: Props) {
   if (!isOpen) return null;
 
   return (
